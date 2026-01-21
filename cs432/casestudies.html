@@ -34,6 +34,12 @@
             font-weight: 600;
         }
         .resource-link:hover { text-decoration: underline; }
+        
+        .disabled-link {
+            color: #999;
+            cursor: not-allowed;
+            text-decoration: line-through;
+         }
     </style>
 </head>
 <body>
@@ -83,7 +89,8 @@
                         <td><strong>AWS S3 Outage</strong></td>
                         <td>2017</td>
                         <td>Cascading Failures & Complexity</td>
-                        <td><a href="#" class="resource-link">Report</a></td>
+                        <!-- <td><a href="#" class="resource-link"></a>Report</td> -->
+                        <td><span class="disabled-link">Link not available</span></td>
                     </tr>
                     <tr>
                         <td><strong>Cloudflare</strong></td>
