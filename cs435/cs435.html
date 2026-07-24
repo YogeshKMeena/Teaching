@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 435 | Home</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="container">
+    <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+    <aside class="sidebar"><ul class="nav-links">
+        <li><a href="../index.html" style="font-weight: bold;">&larr; Main Home</a></li><hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">
+        <li><a href="cs435.html" class="active">Course Overview</a></li><li><a href="staff.html">Staff</a></li><li><a href="logistics.html">Grading Policy</a></li><li><a href="contents.html">Contents &amp; Lectures</a></li><li><a href="projects.html">Course Projects</a></li><li><a href="references.html">References</a></li>
+    </ul></aside>
+    <main>
+        <header><h1>CS 435: Human-Computer Interaction</h1><div style="font-size: 1.2rem; color: #666;">IIT Gandhinagar</div></header>
+        <div class="card"><h3>Welcome</h3><p>Welcome to CS 435. This course explores the design, construction, and evaluation of interactive systems, with people and their needs at the centre of the design process.</p></div>
+        <div class="card"><h3>Recent Announcements</h3></div>
+    </main>
+</div>
+<script>function toggleMenu() { document.querySelector('.sidebar').classList.toggle('active'); }</script>
+</body>
+</html>
