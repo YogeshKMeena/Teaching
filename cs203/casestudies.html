@@ -3,80 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS 203 | Case Studies</title>
+    <title>Contents &amp; Lab | CS 203</title>
     <link rel="stylesheet" href="../style.css">
-    
-    <style>
-        /* Specific styles for the Case Studies Table */
-        table { 
-            width: 100%; 
-            border-collapse: collapse; 
-            margin-top: 15px; 
-            font-size: 0.95rem;
-        }
-        th, td { 
-            border: 1px solid #ddd; 
-            padding: 12px; 
-            text-align: left; 
-            vertical-align: top;
-        }
-        th { 
-            background-color: #f4f4f4; 
-            font-weight: bold; 
-            color: #333;
-        }
-        tr:nth-child(even) { background-color: #f9f9f9; }
-        
-        /* Style for the "PDF" links */
-        .resource-link {
-            color: #0056b3;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .resource-link:hover { text-decoration: underline; }
-        
-        .disabled-link {
-            color: #999;
-            cursor: not-allowed;
-         }
-    </style>
 </head>
 <body>
 <div class="container">
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    
+    <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
     <aside class="sidebar">
         <ul class="nav-links">
-            <li><a href="../index.html" style="font-weight: bold;">⬅ Main Home</a></li>
-            
+            <li><a href="../index.html" style="font-weight: bold;">&larr; Main Home</a></li>
             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">
-
             <li><a href="cs203.html">Course Overview</a></li>
             <li><a href="staff.html">Staff</a></li>
             <li><a href="logistics.html">Grading Policy</a></li>
-            <li><a href="contents.html">Contents & Slides</a></li>
+            <li><a href="contents.html">Contents &amp; Lectures</a></li>
             <li><a href="projects.html">Course Projects</a></li>
-            <li><a href="casestudies.html" class="active">Case Studies</a></li>
+            <li><a href="casestudies.html" class="active">Contents &amp; Lab</a></li>
             <li><a href="references.html">References</a></li>
         </ul>
     </aside>
-
     <main>
-        <header>
-            <h1>Case Studies</h1>
-            <div style="font-size: 1.2rem; color: #666;">CS 203: Software Tools and Techniques for AI</div>
-        </header>
-
+        <header><h1>Course Contents &amp; Lab</h1></header>
         <div class="card">
-            <h3>Case Studies</h3>
-            <p><em>Case study details will be updated soon.</em></p>
+            <h3>Lab Schedule and Materials</h3>
+            <p>Lab details and materials will be added as labs are conducted.</p>
+            <table>
+                <thead><tr><th>Lab</th><th>Date</th><th>Topic</th><th>Material</th></tr></thead>
+                <tbody>
+                    <tr><td>Lab 1</td><td>Aug 5</td><td>To be announced</td><td>Coming soon</td></tr>
+                    <tr><td>Lab 2</td><td>Aug 12</td><td>To be announced</td><td>Coming soon</td></tr>
+                    <tr><td>Lab 3</td><td>Aug 19</td><td>To be announced</td><td>Coming soon</td></tr>
+                    <tr><td>Lab 4</td><td>Aug 26</td><td>To be announced</td><td>Coming soon</td></tr>
+                    <tr><td>Lab 5</td><td>Sep 2</td><td>To be announced</td><td>Coming soon</td></tr>
+                    <tr><td>Lab 6</td><td>Sep 9</td><td>To be announced</td><td>Coming soon</td></tr>
+                    <tr><td>Lab 7</td><td>Sep 16</td><td>To be announced</td><td>Coming soon</td></tr>
+                    <tr><td>Lab 8</td><td>Sep 30</td><td>To be announced</td><td>Coming soon</td></tr>
+                    <tr><td>Lab 9</td><td>Oct 7</td><td>To be announced</td><td>Coming soon</td></tr>
+                    <tr><td>Lab 10</td><td>Oct 14</td><td>To be announced</td><td>Coming soon</td></tr>
+                    <tr><td>Lab 11</td><td>Oct 28</td><td>To be announced</td><td>Coming soon</td></tr>
+                    <tr><td>Lab 12</td><td>Nov 4</td><td>To be announced</td><td>Coming soon</td></tr>
+                    <tr><td>Lab 13</td><td>Nov 11</td><td>To be announced</td><td>Coming soon</td></tr>
+                    <tr><td>Lab 14</td><td>Nov 18</td><td>To be announced</td><td>Coming soon</td></tr>
+                </tbody>
+            </table>
         </div>
     </main>
 </div>
-
-<script>
-    function toggleMenu() { document.querySelector('.sidebar').classList.toggle('active'); }
-</script>
-
+<script>function toggleMenu() { document.querySelector('.sidebar').classList.toggle('active'); }</script>
 </body>
 </html>
