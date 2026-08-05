@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading Policy | CS 203</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="container">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+   <aside class="sidebar">
+        <ul class="nav-links">
+            <li><a href="../index.html" style="font-weight: bold;">⬅ Main Home</a></li>
+            
+            <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">
+
+            <li><a href="cs203.html">Course Overview</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="logistics.html" class="active">Grading Policy</a></li>
+            <li><a href="contents.html">Contents &amp; Lec/Lab</a></li>
+             <li><a href="projects.html">Course Projects</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <header>
+            <h1>Grading Policy</h1>
+        </header>
+
+        <div class="card">
+            <h3>Lecture and Lab Schedule</h3>
+            <p><strong>Lab [I2/M1] — Wednesday:</strong> 14:00–16:50 @ 10/203, 10/204<br>
+            <strong>Lecture [K2] — Thursday:</strong> 14:00–15:20 @ 1/101</p>
+        </div>
+        
+        <div class="card">
+            <h3>Grading Components</h3>
+            <table>
+                <tr><th>Component</th><th>Weight</th><th>Notes</th></tr>
+                <tr><td>Assignments/Mini-projects</td><td>40%</td><td>3 assignments</td></tr>
+                <tr><td>Lab Evaluation</td><td>24%</td><td>3 labs, 8% each.</td></tr>
+                <tr><td>Attendance</td><td>6%</td><td></td></tr>
+                <tr><td>Exam</td><td>30%</td><td>Midsem.</td></tr>
+            </table>
+        </div>
+    </main>
+</div>
+<script>
+    function toggleMenu() { document.querySelector('.sidebar').classList.toggle('active'); }
+</script>
+</body>
+</html>

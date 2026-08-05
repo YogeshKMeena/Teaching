@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 203 | Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    
+    <style>
+        /* Specific styles for the Projects Table */
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 15px; 
+            font-size: 0.95rem;
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+            vertical-align: top;
+        }
+        th { 
+            background-color: #f4f4f4; 
+            font-weight: bold; 
+            color: #333;
+        }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        
+        /* Style for the "Download" links */
+        .resource-link {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .resource-link:hover { text-decoration: underline; }
+        
+        /* Status badge for "Coming Soon" */
+        .status-pending {
+            color: #666;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        .disabled-link {
+            color: #999;
+            cursor: not-allowed;
+         }
+    </style>
+</head>
+<body>
+<div class="container">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+    <aside class="sidebar">
+        <ul class="nav-links">
+            <li><a href="../index.html" style="font-weight: bold;">⬅ Main Home</a></li>
+            
+            <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">
+
+            <li><a href="cs203.html">Course Overview</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="logistics.html">Grading Policy</a></li>
+            <li><a href="contents.html">Contents &amp; Lec/Lab</a></li>
+            <li><a href="projects.html" class="active">Course Projects</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <header>
+            <h1>Course Projects</h1>
+            <div style="font-size: 1.2rem; color: #666;">CS 203: Software Tools and Techniques for AI</div>
+        </header>
+
+        <div class="card">
+            <h3>Project Information</h3>
+            <p><em>Course project details will be updated soon.</em></p>
+        </div>
+    </main>
+</div>
+
+<script>
+    function toggleMenu() { document.querySelector('.sidebar').classList.toggle('active'); }
+</script>
+
+</body>
+</html>
