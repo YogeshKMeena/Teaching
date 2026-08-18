@@ -7817,11 +7817,11 @@ a.anchor-link {
 free. Somebody has to decide it, write it down, and check that other people agree.</p>
 <p>This lab has two halves:</p>
 <ul>
-<li><strong>Part A (Sections 1–8):</strong> create labels, and learn to trust them.</li>
-<li><strong>Part B (Sections 9–13):</strong> turn a small labelled set into a big one.</li>
+<li><strong>Part A (Sections 1-8):</strong> create labels, and learn to trust them.</li>
+<li><strong>Part B (Sections 9-13):</strong> turn a small labelled set into a big one.</li>
 </ul>
-<p><strong>Goal</strong>: label each movie by its <strong>tone</strong> — <code>Dark</code>, <code>Uplifting</code>, <code>Tense</code>,
-<code>Comedic</code>, <code>Romantic</code> — using its plot summary and its poster.</p>
+<p><strong>Goal</strong>: label each movie by its <strong>tone</strong> - <code>Dark</code>, <code>Uplifting</code>, <code>Tense</code>,
+<code>Comedic</code>, <code>Romantic</code> - using its plot summary and its poster.</p>
 <p><strong>Why tone and not genre?</strong> Genre already comes from the API. Tone is a matter of
 opinion. Opinions are where labelling gets hard, and hard is what we want to
 study. A horror comedy is <code>Tense</code> to one person and <code>Comedic</code> to another, and
@@ -8055,7 +8055,7 @@ small CNN and will be slow without it.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="PART-A-%E2%80%94-LABELLING-DAT">PART A — LABELLING DAT<a class="anchor-link" href="#PART-A-%E2%80%94-LABELLING-DAT">¶</a></h1>
+<h1 id="PART-A-%E2%80%94-LABELLING-DAT">PART A - LABELLING DAT<a class="anchor-link" href="#PART-A-%E2%80%94-LABELLING-DAT">¶</a></h1>
 </div>
 </div>
 </div>
@@ -8455,7 +8455,7 @@ Think about cost, tiredness, differing opinions, and rare classes.</p>
 <li>If that returns <code>None</code>, fall back to the poster's average brightness: below 70
 means <code>Dark</code>, above 160 means <code>Uplifting</code>, otherwise still <code>None</code>.</li>
 </ul>
-<p>Run it on all movies. Report <strong>coverage</strong> — the percentage that received any
+<p>Run it on all movies. Report <strong>coverage</strong> - the percentage that received any
 label at all.</p>
 <p>Tip: <code>Image.open(path).convert("L")</code> gives a greyscale image; take <code>.mean()</code> of
 the array.</p>
@@ -8549,7 +8549,7 @@ the array.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The model is confident, but confident is not the same as correct. Explain in 2–3
+<p>The model is confident, but confident is not the same as correct. Explain in 2-3
 sentences what happens to the model when we train on its own wrong guesses.</p>
 </div>
 </div>
@@ -8561,7 +8561,7 @@ sentences what happens to the model when we train on its own wrong guesses.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>This failure has a name — <strong>confirmation bias</strong>, or error reinforcement.</p>
+<p>This failure has a name - <strong>confirmation bias</strong>, or error reinforcement.</p>
 </div>
 </div>
 </div>
@@ -8674,7 +8674,7 @@ keeps your progress, and exports clean files.</p>
 <tbody>
 <tr>
 <td><strong>Label Studio</strong></td>
-<td>many data types (image, text, audio) — we use this</td>
+<td>many data types (image, text, audio) - we use this</td>
 </tr>
 <tr>
 <td><strong>CVAT</strong></td>
@@ -9035,7 +9035,7 @@ the 30 movies both people actually finished.</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>A guideline is a written rule book. If two people read it and still label
-differently, the rule book is at fault — not the people.</p>
+differently, the rule book is at fault - not the people.</p>
 </div>
 </div>
 </div>
@@ -9224,7 +9224,7 @@ guess?</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Quality control</strong> means somebody checks the labels. Write a short plan (4–5
+<p><strong>Quality control</strong> means somebody checks the labels. Write a short plan (4-5
 lines) covering: who reviews, what share of labels get reviewed, what happens
 when the reviewer disagrees, and when you would stop and rewrite the guidelines.</p>
 </div>
@@ -9429,7 +9429,7 @@ sometimes. <strong>Cohen's Kappa</strong> removes that lucky agreement.</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Use the disagreements from 5.3 to write <code>GUIDELINES_V2</code>. Re-label <strong>only the
 disagreed movies</strong> with the new rules, then compute Kappa again.</p>
-<p>Did it improve? This loop — <em>measure, fix the rules, measure again</em> — is the main
+<p>Did it improve? This loop - <em>measure, fix the rules, measure again</em> - is the main
 skill of this section.</p>
 </div>
 </div>
@@ -9677,7 +9677,7 @@ reason you never report Kappa without also reporting the class distribution.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Section-6:-Sampling-%E2%80%94-Choosing-What-to-Label">Section 6: Sampling — Choosing What to Label<a class="anchor-link" href="#Section-6:-Sampling-%E2%80%94-Choosing-What-to-Label">¶</a></h1>
+<h1 id="Section-6:-Sampling-%E2%80%94-Choosing-What-to-Label">Section 6: Sampling - Choosing What to Label<a class="anchor-link" href="#Section-6:-Sampling-%E2%80%94-Choosing-What-to-Label">¶</a></h1>
 </div>
 </div>
 </div>
@@ -9771,7 +9771,7 @@ few known examples (<strong>seeds</strong>) and pulls in the most similar unlabe
 <li>Build TF-IDF vectors from the <code>plot</code> column
 (<code>sklearn.feature_extraction.text.TfidfVectorizer</code>).</li>
 <li>Given 3 seed <code>Romantic</code> movies, use <code>NearestNeighbors</code> to find the 20 closest
-<strong>unlabelled</strong> movies. Return their titles — these are your next candidates.</li>
+<strong>unlabelled</strong> movies. Return their titles - these are your next candidates.</li>
 </ol>
 </div>
 </div>
@@ -9827,7 +9827,7 @@ few known examples (<strong>seeds</strong>) and pulls in the most similar unlabe
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-6.3:-The-hidden-cost-of-snowball-sampling">Question 6.3: The hidden cost of snowball sampling<a class="anchor-link" href="#Question-6.3:-The-hidden-cost-of-snowball-sampling">¶</a></h3><p>A snowball sample is <strong>not</strong> random. Explain in 2–3 sentences why testing your
+<h3 id="Question-6.3:-The-hidden-cost-of-snowball-sampling">Question 6.3: The hidden cost of snowball sampling<a class="anchor-link" href="#Question-6.3:-The-hidden-cost-of-snowball-sampling">¶</a></h3><p>A snowball sample is <strong>not</strong> random. Explain in 2-3 sentences why testing your
 model on a snowball-grown set makes its accuracy look better than it really is,
 and what you must keep aside to avoid this.</p>
 </div>
@@ -9856,7 +9856,7 @@ and what you must keep aside to avoid this.</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Question-6.4:-Spot-the-convenience-sample">Question 6.4: Spot the convenience sample<a class="anchor-link" href="#Question-6.4:-Spot-the-convenience-sample">¶</a></h3><p>Your friend labels only the first 100 rows of the CSV because they are at the top
-of the file — and the CSV is sorted by year. Name two ways this hurts the model.</p>
+of the file - and the CSV is sorted by year. Name two ways this hurts the model.</p>
 </div>
 </div>
 </div>
@@ -9956,13 +9956,13 @@ sure</strong> about. A human stays in the loop.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-7.3:-Active-learning-vs-random-%E2%80%94-draw-the-curves">Question 7.3: Active learning vs random — draw the curves<a class="anchor-link" href="#Question-7.3:-Active-learning-vs-random-%E2%80%94-draw-the-curves">¶</a></h3><p>Use your labelled movies as a stand-in for a human, so you do not have to keep
+<h3 id="Question-7.3:-Active-learning-vs-random-%E2%80%94-draw-the-curves">Question 7.3: Active learning vs random - draw the curves<a class="anchor-link" href="#Question-7.3:-Active-learning-vs-random-%E2%80%94-draw-the-curves">¶</a></h3><p>Use your labelled movies as a stand-in for a human, so you do not have to keep
 clicking. Features: the TF-IDF plot vectors from Question 6.2.</p>
 <ol>
 <li>Start with 10 labelled movies; the rest form the pool.</li>
 <li>Each round: train <code>LogisticRegression</code>, then pick 10 more movies
 (a) by entropy, and (b) at random. Add them, retrain, record test accuracy.</li>
-<li>Plot both curves — labels used on the x-axis, accuracy on the y-axis.</li>
+<li>Plot both curves - labels used on the x-axis, accuracy on the y-axis.</li>
 </ol>
 <p>The gap between the curves is the labelling effort you saved.</p>
 </div>
@@ -10111,7 +10111,7 @@ saved 40%".</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Question-7.5:-Query-by-Committee-(short-answer)">Question 7.5: Query-by-Committee (short answer)<a class="anchor-link" href="#Question-7.5:-Query-by-Committee-(short-answer)">¶</a></h3><p>In <strong>Query-by-Committee</strong> you train several different models and ask for labels
 where the models <strong>disagree</strong> most.</p>
-<p>Write 2–3 sentences giving one advantage over plain uncertainty sampling, and
+<p>Write 2-3 sentences giving one advantage over plain uncertainty sampling, and
 one cost.</p>
 </div>
 </div>
@@ -10312,8 +10312,8 @@ brightness is below 70, otherwise abstain.</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-8.4:-When-is-weak-supervision-worth-it?">Question 8.4: When is weak supervision worth it?<a class="anchor-link" href="#Question-8.4:-When-is-weak-supervision-worth-it?">¶</a></h3><p>Using your actual coverage and accuracy numbers — not a general feeling — argue
-in 3–4 sentences whether you would train on these weak labels.</p>
+<h3 id="Question-8.4:-When-is-weak-supervision-worth-it?">Question 8.4: When is weak supervision worth it?<a class="anchor-link" href="#Question-8.4:-When-is-weak-supervision-worth-it?">¶</a></h3><p>Using your actual coverage and accuracy numbers - not a general feeling - argue
+in 3-4 sentences whether you would train on these weak labels.</p>
 </div>
 </div>
 </div>
@@ -10339,7 +10339,7 @@ in 3–4 sentences whether you would train on these weak labels.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="PART-B-%E2%80%94-DATA-AUGMENTATION">PART B — DATA AUGMENTATION<a class="anchor-link" href="#PART-B-%E2%80%94-DATA-AUGMENTATION">¶</a></h1>
+<h1 id="PART-B-%E2%80%94-DATA-AUGMENTATION">PART B - DATA AUGMENTATION<a class="anchor-link" href="#PART-B-%E2%80%94-DATA-AUGMENTATION">¶</a></h1>
 </div>
 </div>
 </div>
@@ -10356,9 +10356,9 @@ sample.</p>
 <p>It helps in four ways:</p>
 <ol>
 <li>More data without more labelling.</li>
-<li>Better <strong>generalisation</strong> — the model copes with new, unseen inputs.</li>
-<li>Less <strong>overfitting</strong> — the model cannot simply memorise the images.</li>
-<li>It eases <strong>class imbalance</strong> — augment the rare class more.</li>
+<li>Better <strong>generalisation</strong> - the model copes with new, unseen inputs.</li>
+<li>Less <strong>overfitting</strong> - the model cannot simply memorise the images.</li>
+<li>It eases <strong>class imbalance</strong> - augment the rare class more.</li>
 </ol>
 <h3 id="Question-9.1-(Solved):-Show-the-imbalance">Question 9.1 (Solved): Show the imbalance<a class="anchor-link" href="#Question-9.1-(Solved):-Show-the-imbalance">¶</a></h3>
 </div>
@@ -10769,9 +10769,9 @@ transform from Question 10.2 that could change the true label, and explain why.<
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Question-11.2:-Synonym-replacement-and-random-insertion">Question 11.2: Synonym replacement and random insertion<a class="anchor-link" href="#Question-11.2:-Synonym-replacement-and-random-insertion">¶</a></h3><p>Write two more functions:</p>
 <ol>
-<li><code>synonym_replacement(text, n=2)</code> — replace <code>n</code> words with a synonym.
+<li><code>synonym_replacement(text, n=2)</code> - replace <code>n</code> words with a synonym.
 Use <code>nlpaug</code>'s <code>SynonymAug</code>, or <code>nltk</code> WordNet.</li>
-<li><code>random_insertion(text, n=1)</code> — insert <code>n</code> synonyms of existing words at
+<li><code>random_insertion(text, n=1)</code> - insert <code>n</code> synonyms of existing words at
 random positions.</li>
 </ol>
 <p>Run all four functions on five plots and print before and after.</p>
@@ -10988,10 +10988,10 @@ whatever the source.</p>
 <code>librosa.load("your.wav", sr=16000)</code>.</p>
 <h3 id="Question-12.2:-Four-more-audio-transforms">Question 12.2: Four more audio transforms<a class="anchor-link" href="#Question-12.2:-Four-more-audio-transforms">¶</a></h3><p>Write each and save a <code>.wav</code> you can listen to:</p>
 <ol>
-<li><strong>Time shift</strong> — roll the wave forward by 0.5 seconds.</li>
-<li><strong>Pitch shift</strong> — up 2 semitones (<code>librosa.effects.pitch_shift</code>).</li>
-<li><strong>Speed change</strong> — 1.2× faster (<code>librosa.effects.time_stretch</code>).</li>
-<li><strong>Volume change</strong> — 50% quieter.</li>
+<li><strong>Time shift</strong> - roll the wave forward by 0.5 seconds.</li>
+<li><strong>Pitch shift</strong> - up 2 semitones (<code>librosa.effects.pitch_shift</code>).</li>
+<li><strong>Speed change</strong> - 1.2× faster (<code>librosa.effects.time_stretch</code>).</li>
+<li><strong>Volume change</strong> - 50% quieter.</li>
 </ol>
 </div>
 </div>
@@ -11326,7 +11326,7 @@ three times, and compare validation accuracy:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-13.3:-When-augmentation-hurts">Question 13.3: When augmentation hurts<a class="anchor-link" href="#Question-13.3:-When-augmentation-hurts">¶</a></h3><p>Now build a <strong>bad</strong> pipeline on purpose — rotate posters by 180 degrees and raise
+<h3 id="Question-13.3:-When-augmentation-hurts">Question 13.3: When augmentation hurts<a class="anchor-link" href="#Question-13.3:-When-augmentation-hurts">¶</a></h3><p>Now build a <strong>bad</strong> pipeline on purpose - rotate posters by 180 degrees and raise
 brightness by 90%. Train with it and record the accuracy.</p>
 <p>Explain why it hurt, and connect your answer to <strong>unrealistic augmentation</strong>: the
 new samples no longer resemble anything in the test set.</p>
@@ -11447,7 +11447,7 @@ its limits.</li>
 <li>Save labelling effort with active learning.</li>
 <li>Write labelling functions for weak supervision.</li>
 <li>Augment images, text, and audio with the standard libraries.</li>
-<li>Prove whether your augmentation helped — and recognise when it hurts.</li>
+<li>Prove whether your augmentation helped - and recognise when it hurts.</li>
 </ol>
 </div>
 </div>
